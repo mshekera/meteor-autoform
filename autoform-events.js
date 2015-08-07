@@ -482,6 +482,10 @@ Template.autoForm.events({
 
     event.preventDefault();
 
+    if (!confirm('Вы уверены?')) {
+      return;
+    }
+
     var name = self.arrayFieldName;
     var minCount = self.minCount; // optional, overrides schema
     var maxCount = self.maxCount; // optional, overrides schema
