@@ -482,7 +482,7 @@ Template.autoForm.events({
 
     event.preventDefault();
 
-    if (!confirm('Вы уверены?')) {
+    if (!confirm('Ви впевнені?')) {
       return;
     }
 
